@@ -10,16 +10,16 @@ game_mode = input("Valige, kas soovite mängida /1/ teise inimesega või /2/ rob
 
 while True:
     try:
-        if game_mode == "1":  #играть с человеком
+        if game_mode == "1":
             player1 = input("Mängija 1, sisestage oma valik (kivi, paber, käärid): ")
             if player1 not in list:
-                raise ValueError("Vale valik, proovige uuesti.")
+                ValueError("Vale valik, proovige uuesti.")
             
             player2 = input("Mängija 2, sisestage oma valik (kivi, paber, käärid): ")
             if player2 not in list:
                 raise ValueError("Vale valik, proovige uuesti.")
         
-        elif game_mode == "2":  #играть с роботом
+        elif game_mode == "2":
             player1 = input("Mängija 1, sisestage oma valik (kivi, paber, käärid): ")
             if player1 not in list:
                 raise ValueError("Vale valik, proovige uuesti.")
